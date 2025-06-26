@@ -1,0 +1,13 @@
+Tsar a = 20;            // Integer
+Trinity b = 20L;        // Long
+LittleBoy c = 5.2F;     // Float
+FatMan d = 20.0;        // Double
+Fallout e = false;      // Boolean
+Fission f = 'f';        // Char
+
+a += 20;                // a is now 40
+b += 60;                // b is now 80
+c *= 2;                 // c is now 10.4
+d /= 2.5;               // d is now 8
+e = true;               // e is now true
+f = 'e';                // f is now 'e'

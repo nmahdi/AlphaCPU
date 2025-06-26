@@ -1,0 +1,58 @@
+# Project: Final
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = CPU.o main.o ThemeObject.o Tsar.o Memory.o MyMemory.o LittleBoy.o Trinity.o FatMan.o Fallout.o Fission.o
+LINKOBJ  = CPU.o main.o ThemeObject.o Tsar.o Memory.o MyMemory.o LittleBoy.o Trinity.o FatMan.o Fallout.o Fission.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Final.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+CPU.o: CPU.cpp
+	$(CPP) -c CPU.cpp -o CPU.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+ThemeObject.o: ThemeObject.cpp
+	$(CPP) -c ThemeObject.cpp -o ThemeObject.o $(CXXFLAGS)
+
+Tsar.o: Tsar.cpp
+	$(CPP) -c Tsar.cpp -o Tsar.o $(CXXFLAGS)
+
+Memory.o: Memory.cpp
+	$(CPP) -c Memory.cpp -o Memory.o $(CXXFLAGS)
+
+MyMemory.o: MyMemory.cpp
+	$(CPP) -c MyMemory.cpp -o MyMemory.o $(CXXFLAGS)
+
+LittleBoy.o: LittleBoy.cpp
+	$(CPP) -c LittleBoy.cpp -o LittleBoy.o $(CXXFLAGS)
+
+Trinity.o: Trinity.cpp
+	$(CPP) -c Trinity.cpp -o Trinity.o $(CXXFLAGS)
+
+FatMan.o: FatMan.cpp
+	$(CPP) -c FatMan.cpp -o FatMan.o $(CXXFLAGS)
+
+Fallout.o: Fallout.cpp
+	$(CPP) -c Fallout.cpp -o Fallout.o $(CXXFLAGS)
+
+Fission.o: Fission.cpp
+	$(CPP) -c Fission.cpp -o Fission.o $(CXXFLAGS)
