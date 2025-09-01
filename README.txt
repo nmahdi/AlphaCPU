@@ -1,4 +1,4 @@
-C++ Final Project for CIS-230 C++ Programming course. Check CIS230Summer2025FinalProject.pdf for more information.
+C++ Final Project for CIS-230 "C++ Programming" course. Check CIS230Summer2025FinalProject.pdf for more information.
 
 Theme: Nuclear Weapons/Terms
 
